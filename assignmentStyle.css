@@ -1,0 +1,673 @@
+
+/* Layout  */
+body {
+    margin: 0px;
+    background-color: rgb(215, 255, 255);
+}
+
+/* navbar */
+
+nav {
+    box-shadow: 10px 1px 20px rgb(57, 57, 58);
+}
+
+.nav1 {
+    display: flex;
+    height: 60px;
+    background-color: rgb(245, 255, 255);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    background: linear-gradient(to right, #00eeff 0%, #c300ff 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 1s ease;
+}
+
+.logo2 {
+    margin-left: -60px;
+    margin-top: -28px;
+    font-size: 15px;
+    transition: 2s ease-in-out;
+}
+
+.logo,
+.actions {
+    width: 22%;
+}
+
+.search-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
+.search-box form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.search-box .icon {
+    padding: 3px;
+    margin-right: 6px;
+    font-size: 20px;
+    background: transparent;
+    border: none;
+}
+
+.search-box [type="text"] {
+    width: 50%;
+    height: 25px;
+    border: 1px solid silver;
+    border-radius: 5px;
+    padding: 4px;
+    font-size: 15px;
+}
+
+.actions {
+    display: flex;
+    margin-left: 6px;
+    align-items: center;
+    justify-content: center;
+    text-align: right;
+    margin-right: 5px;
+    font-size: 17px;
+}
+
+.nav2 {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-size: 17px;
+    height: 40px;
+    background-color: #0155c2;
+}
+
+.nav2 a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: 1s;
+}
+
+.nav-items {
+    transition: 1s;
+}
+
+.nav2 a:hover {
+    font-size: 21px;
+    color: #ffaa00;
+}
+
+/* navbar end */
+
+.layoutMain {
+    margin: 20px 10%;
+}
+
+/* Sidebar */
+.sidebar {
+
+    float: left;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: rgba(226, 235, 255, 0.95);
+    position: fixed;
+    left: -500px;
+    top: 0;
+    padding-left: 20px;
+    width: 50%;
+    height: 100%;
+    border-radius: 0px 20px 20px 0px;
+    transition: 1s;
+}
+
+.sidebar-icon {
+    /* display: flex; */
+    margin-left: 6px;
+    align-items: center;
+    justify-content: center;
+    text-align: right;
+    margin-right: 14px;
+    font-size: 30px;
+    display: none;
+    cursor: pointer;
+}
+
+
+.sidebar .sidebar-closeButt {
+    font-size: 30px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-right: 20px;
+    color: red;
+    margin-bottom: 0;
+    cursor: pointer;
+}
+
+.sidebar .sidebar-items {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    font-size: 19px;
+}
+
+.sidebar div {
+    margin-bottom: 7px;
+    text-align: left;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #0155c2;
+    transition: .5s;
+}
+
+.sidebar a:hover {
+    font-size: 22px;
+    color: #c300ff;
+}
+
+/* Sidebar end */
+
+/* footer */
+
+
+.footer {
+    display: flex;
+    gap: 20px;
+    height: 60px;
+    padding: 10px 0;
+    font-size: 17px;
+    color:rgb(98, 98, 98);
+    background-color: white;
+    box-shadow: 10px 1px 20px rgb(57, 57, 58);
+    position: relative;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+}
+
+.layoutFooter {
+    display: flex;
+    gap: 20px;
+    height: 60px;
+    padding: 10px 0;
+    font-size: 17px;
+    color:rgb(98, 98, 98);
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    box-shadow: 10px 1px 20px rgb(57, 57, 58);
+}
+
+.footer div:first-child {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 50%;
+    margin-left: 50px;
+}
+
+.layoutFooter div:first-child {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 50%;
+    margin-left: 50px;
+}
+
+.footer div:last-child {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    width: 50%;
+    margin-right: 40px;
+}
+
+.layoutFooter div:last-child {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    width: 50%;
+    margin-right: 40px;
+}
+
+/* footer end  */
+
+/* layout end  */
+
+
+
+
+
+/* Form */
+.form {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 100px;
+    
+}
+
+/* 020689 */
+.form form {
+    width: 100%;
+    max-width: 700px;
+    padding: 25px;
+    box-shadow: 13px 15px 20px rgba(125, 89, 255, 0.6);
+    background-color: rgb(255, 255, 255, 0.5);
+    
+}
+
+.form-image {
+    text-align: center;
+}
+
+.form-content h1{
+    color: #0155c2;
+    text-align: center;
+    margin-bottom: 2px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.form p {
+    font-size: 15px;
+}
+
+.form form span {
+    color: red;
+}
+
+.form hr {
+    margin-top: -10px;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.form-content .form-box, .form-radio {
+    margin-top: 14px;
+}
+
+.form-box label {
+    font-size: 17px;
+    
+}
+
+.form-content .form-box input {
+    margin-top: 5px;
+    width: 95%;
+    height: 22px;
+    padding: 5px;
+    border: .5px solid #0155c2;
+    border-radius: 8px;
+    font-size: 15px;
+
+}
+
+.form-butt {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.form-butt input{
+    width: 25%;
+    height: 34px;
+    background-color: #0ddfee;
+    border: 1px solid #0155c2;
+    border-radius: 7px;
+    font-weight: bolder;
+    font-size: 15px;
+}
+
+.form-butt input:hover {
+    background-color: #00cedd;
+    color: #0155c2;
+}
+
+.form fieldset {
+    width: 93%;
+    height: 67px;
+    border-radius: 8px;
+    border: 2px solid #0155c2;
+}
+
+.form legend { 
+    font-size: 18px;
+}
+
+.form-radio label {
+    font-size: 17px;
+    margin-top: 5px;
+}
+
+/* Form end */
+
+
+/* My Self */
+
+.indexMain, .ttMain {
+    margin: 20px 10%;
+}
+
+.indexMain h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 45px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.indexMain p {
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: justify;
+}
+
+
+/* My Self end  */
+
+/* School */
+
+.indexMain h2 {
+    font-size: 24px;
+    margin-top: -10px;
+}
+
+.indexMain ol, dl {
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: justify;
+}
+
+
+/* School end  */
+
+
+/* Time Table  */
+    .timetable {
+        width: 100%;
+        min-height: 300px;
+        font-size: 15px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    }
+
+    .ttMain h1 {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 45px;
+        text-align: center;
+        text-decoration: underline;
+    }
+
+    .timetable-container {
+        /* overflow: scroll; */
+        height: auto;
+        width: auto;
+        background-color: white;
+        padding: 25px 5px 35px 5px;
+    }
+
+    .timetable caption {
+        font-size: 20px;
+    }
+
+    .timetable td:hover {
+        background-color: #f4f4f4;
+    }
+
+
+/* Time Table end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* layout */
+@media (max-width: 950px) {
+    .logo {
+        font-size: 20px;
+    }
+
+    .logo2 {
+        margin-left: -60px;
+        margin-top: -28px;
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 820px) {
+    .logo div:first-child {
+        /* display: none; */
+        margin-top: -100px;
+    }
+
+    .logo2 {
+        margin-left: 0px;
+        margin-top: 0px;
+        font-size: 25px;
+    }
+
+}
+
+@media (max-width: 740px) {
+
+    /* timetable  */
+    .indexMain, .ttMain {
+        margin: 20px 1%;
+    }
+
+    /* timetable end  */
+}
+
+@media (max-width: 610px) {
+
+    /* My Self Footer  */
+     .index footer {
+        position: relative;
+        margin: 0;
+        padding: 10px 0;
+    }
+
+    /* My Self Footer end  */
+    
+}
+
+@media (min-width: 570px) {
+    .sidebar {
+        display: none;
+    }
+
+    
+}
+
+@media (max-width: 570px) {
+
+    /* Navbar */
+    .logo {
+        width: 15%;
+    }
+
+    .logo div:first-child {
+        display: none;
+    }
+
+    .actions {
+        display: none;
+    }
+
+    .nav2 {
+        display: none;
+    }
+
+    /* Navbar end */
+
+    /* Sidebar */
+    .sidebar-icon {
+        display: flex;
+    }
+
+    /* Sidebar end */
+
+    /* Form */
+    .form form {
+        padding: 3px;  
+        padding-left: 10px;      
+    }
+    /* Form End  */
+
+    /* footer  */
+
+    footer {
+        font-size: 15px !important;
+    }
+
+    .footer div:first-child {
+        margin-left: 10px;
+    }
+    
+    .footer div:last-child {
+        margin-right: 10px;
+    }
+
+    .layoutFooter div:first-child {
+        margin-left: 10px;
+    }
+    
+    .layoutFooter div:last-child {
+        margin-right: 10px;
+    }
+    /* footer end  */
+
+    /* timetable  */
+    .timetable-container {
+        overflow: scroll;
+        height: auto;
+        width: auto;
+        padding: 40px;
+        background-color: white;
+    }
+
+    .ttMain {
+        margin: 10px 10px;
+    }
+    
+    /* timetable  */
+
+    
+}
+
+@media (max-width: 380px) {
+
+    /* Navbar */
+    .search-box form input {
+        display: none;
+        width: 20%;
+
+    }
+
+    .logo,
+    .actions {
+        width: 35%;
+    }
+
+    /* Navbar end */
+
+    /* sidebar  */
+
+    .sidebar {
+        width: 100%;
+    }
+    .sidebar .sidebar-items {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+        font-size: 17px;
+    }
+
+    .sidebar .sidebar-closeButt {
+        font-size: 20px;
+        margin-right: 20px;
+    }
+
+    /* sidebar end  */
+
+    /* footer  */
+
+    .footer {
+        margin: 1px;
+        padding: 2px;
+    }
+
+    /* footer end  */
+
+    .indexMain {
+        padding: 20px 5px;
+    }
+
+    .indexMain p{
+        font-size: 17px;
+    }
+
+
+@media (max-width: 250px) {
+
+    /* sidebar */
+
+    
+    }
+
+    /* sidebar end  */
+}
+ /* Layout end  */
+
+
+
+ @media (max-height: 800px ) {
+    .layoutFooter {
+        position: relative;
+    }    
+
+ }

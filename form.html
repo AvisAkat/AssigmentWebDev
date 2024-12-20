@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Business Entity</title>
+    <link rel="stylesheet" href="assignmentStyle.css" type="text/css" />
+
+</head>
+
+<body>
+    <div class="sidebar">
+        <div class="sidebar-closeButt" onclick="sidebar(false)">✖</div>
+        <div class="sidebar-items">
+            <div class="nav-items"><a href="index.html">My Self</a></div>
+            <div class="nav-items"><a href="school.html">School</a></div>
+            <div class="nav-items"><a href="timetable.html">Time Table</a></div>
+            <div class="nav-items"><a href="form.html">Registration Form</a></div>
+            <div class="nav-items"><a href="#">Sign In</a></div>
+        </div>
+    </div>
+    <nav>
+        <div class="nav1">
+            <div class="logo">
+                <div><a href="index.html">Assignment</a></div>
+                <div class="logo2"><a href="index.html">⚡</a></div>
+            </div>
+            <div class="search-box">
+                <form>
+                    <label for="search-box" class="icon">🔍</label>
+                    <input type="text" name="search-box" id="search-box" placeholder="Search" />
+                </form>
+            </div>
+            <div class="actions">Sign In</div>
+            <div class="sidebar-icon" onclick="sidebar(true)">≣</div>
+        </div>
+        <div class="nav2">
+            <div class="nav-items"><a href="index.html">My Self</a></div>
+            <div class="nav-items"><a href="school.html">School</a></div>
+            <div class="nav-items"><a href="timetable.html">Time Table</a></div>
+            <div class="nav-items"><a href="form.html">Registration Form</a></div>
+            <div class="nav-items"><a href="layout2.html">layout</a></div>
+        </div>
+    </nav>
+
+    <h1 style="text-align: center; font-size: 45px;margin-top: 100px;">BasketBall Club</h1>
+
+    <div class="form">
+        <form action="index.html" method="post">
+            <div class="form-content">
+                <h1 class="form-header">Register</h1>
+                <p>Fields Mark with <span>*</span> are mandatory.</p>
+                <hr />
+                <div class="form-box">
+                    <label for="fName">Name<span>*</span></label><br />
+                    <input type="text" name="fullName" id="fName" placeholder="John Affo" />
+                </div>
+                <div class="form-box">
+                    <label for="uName">Username<span>*</span></label><br />
+                    <input type="text" name="userName" id="uName" placeholder="JohnAffo123" />
+                </div>
+                <div class="form-box">
+                    <label for="email">Email<span>*</span></label><br />
+                    <input type="email" name="email" id="email" placeholder="johnaffo123@example.com" />
+                </div>
+                <div class="form-box">
+                    <label for="address">Address<span>*</span></label><br />
+                    <input type="text" name="address" id="address" placeholder="1234 Main St." />
+                </div>
+                <div class="form-box">
+                    <label for="dob">Date of Birth<span>*</span></label><br />
+                    <input type="date" name="dob" id="dob" />
+                </div>
+                <div class="form-radio">
+                    <fieldset>
+                        <legend>Gender</legend>
+                        <div style="display: flex; flex-direction: row">
+                            <input type="radio" name="gender" id="male" value="male" />
+                            <label for="male">Male</label>
+                        </div>
+                        <div style="display: flex; flex-direction: row">
+                            <input type="radio" name="gender" id="female" value="female" />
+                            <label for="male">Female</label>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="form-box">
+                    <label for="pNumber">Phone Number<span>*</span></label><br />
+                    <input type="number" name="pNumber" id="pNumber" placeholder="User's Contact" />
+                </div>
+                <div class="form-box">
+                    <label for="opNumber">Other Phone Number</label><br />
+                    <input type="number" name="opNumber" id="opNumber" placeholder="User's Additonal Contact" />
+                </div>
+                <div class="form-butt">
+                    <input type="submit" value="Sign Up" class="butt" />
+                </div>
+            </div>
+        </form>
+    </div>
+    <footer class="footer">
+        <div>@Copyright 2024  ...UPSA</div>
+        <div>created by @AvisAkat</div>
+    </footer>
+
+
+    <script src="assignment.js"></script>
+</body>
+
+</html>

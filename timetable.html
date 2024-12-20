@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assignmentStyle.css" type="text/css" />
+</head>
+
+<body>
+
+
+    <div class="sidebar">
+        <div class="sidebar-closeButt" onclick="sidebar(false)">✖</div>
+        <div class="sidebar-items">
+            <div class="nav-items"><a href="index.html">My Self</a></div>
+            <div class="nav-items"><a href="school.html">School</a></div>
+            <div class="nav-items"><a href="timetable.html">Time Table</a></div>
+            <div class="nav-items"><a href="form.html">Registration Form</a></div>
+            <div class="nav-items"><a href="#">Sign In</a></div>
+        </div>
+    </div>
+    <nav>
+        <div class="nav1">
+            <div class="logo">
+                <div><a href="index.html">Assignment</a></div>
+                <div class="logo2"><a href="index.html">⚡</a></div>
+            </div>
+            <div class="search-box">
+                <form>
+                    <label for="search-box" class="icon">🔍</label>
+                    <input type="text" name="search-box" id="search-box" placeholder="Search" />
+                </form>
+            </div>
+            <div class="actions">Sign In</div>
+            <div class="sidebar-icon" onclick="sidebar(true)">≣</div>
+        </div>
+        <div class="nav2">
+            <div class="nav-items"><a href="index.html">My Self</a></div>
+            <div class="nav-items"><a href="school.html">School</a></div>
+            <div class="nav-items"><a href="timetable.html">Time Table</a></div>
+            <div class="nav-items"><a href="form.html">Registration Form</a></div>
+            <div class="nav-items"><a href="layout2.html">layout</a></div>
+        </div>
+    </nav>
+
+    <main style="margin-top: 60px;" class="ttMain">
+
+        <h1 align="center">Personal TimeTable</h1>
+        <br>
+        <div class="timetable-container">
+
+        
+        <table border="1" width="90%" align="center" class="timetable">
+            <caption>Level 200: 1st Semester</caption>
+            <tr>
+                <th>DAY/TIME</th>
+                <th colspan="2">7:00AM-9:00AM</th>
+                <th colspan="2">9:00AM-11:00AM</th>
+                <th colspan="2">11:00AM-1:00PM</th>
+                <th colspan="2">1:00PM-3:00PM</th>
+                <th colspan="2">3:00PM-5:00PM</th>
+                <th colspan="2">5:00PM-6:00PM</th>
+            </tr>
+            <tr align="center">
+                <td>MONDAY</td>
+                <td colspan="4">Legal Environment of Business</td>
+                <td rowspan="2" colspan="3">Break</td>
+                <td colspan="3">Web Development</td>
+                <td rowspan="7">Break</td>
+            </tr>
+            <tr align="center">
+                <td>TUESDAY</td>
+                <td colspan="4">Personal Study</td>
+                <td colspan="3" rowspan="3">Break</td>
+            </tr>
+            <tr align="center">
+                <td>WEDNESDAY</td>
+                <td colspan="4">Introduction to Business Finance</td>
+                <td colspan="3">Data Communications and Computer Networks</td>
+            </tr>
+            <tr align="center">
+                <td>THURSDAY</td>
+                <td rowspan="3" colspan="2">Break</td>
+                <td colspan="5">Personal Study</td>
+            </tr>
+            <tr align="center">
+                <td>FRIDAY</td>
+                <td colspan="2">Rest</td>
+                <td colspan="3">Information Systems</td>
+                <td colspan="3">Elements of Marketing</td>
+            </tr>
+            <tr align="center">
+                <td>SATURDAY</td>
+                <td colspan="5">Personal Study</td>
+                <td colspan="3">Break</td>
+            </tr>
+            <tr align="center">
+                <td>SUNDAY</td>
+                <td colspan="8">Church</td>
+                <td>Rest</td>
+            </tr>
+        </table>
+    </div>
+    </main>
+
+    <footer class="layoutFooter" style="margin-top: 100px;">
+        <div>@Copyright 2024 ...UPSA</div>
+        <div>created by @AvisAkat</div>
+    </footer>
+
+
+    <script src="assignment.js"></script>
+</body>
+
+</html>
