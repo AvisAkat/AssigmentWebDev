@@ -107,6 +107,53 @@ nav {
     color: #ffaa00;
 }
 
+.mini-searchbox {
+    padding: 40px 0;
+    position: fixed;
+    top: -500px;
+    left: 0;
+    width: 100%;
+    background-color: rgba(226, 235, 255, 0.95);
+    border-radius: 0px 0px 20px 20px;
+    height: 100px;
+    transition: 1s;
+}
+
+.mini-searchbox-icon {
+    padding: 3px;
+    margin-right: 6px;
+    font-size: 20px;
+    background: transparent;
+    border: none;
+}
+
+.mini-searchbox .mini-searchbox-closeButt {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    color: red;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.mini-searchbox form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.mini-searchbox input {
+    width: 90%;
+    height: 35px;
+    border: 1px solid silver;
+    border-radius: 5px;
+    padding: 4px;
+    font-size: 15px;
+}
+
 /* navbar end */
 
 .layoutMain {
@@ -522,6 +569,7 @@ nav {
     
 }
 
+
 @media (max-width: 570px) {
 
     /* Navbar */
@@ -598,10 +646,21 @@ nav {
     
 }
 
+@media (min-width: 380px) {
+    .mini-searchbox {
+        display: none;
+    }
+
+    .mini-searchbox-icon {
+        display: none;
+    }
+    
+}
+
 @media (max-width: 380px) {
 
     /* Navbar */
-    .search-box form input {
+    .search-box form input:last-child, [type="submit"] {
         display: none;
         width: 20%;
 

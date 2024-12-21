@@ -10,6 +10,13 @@
 </head>
 
 <body>
+    <div class="mini-searchbox">
+        <form action="#" method="post" >
+            <input type="text" name="search-box" id="search-box2" placeholder="Search" />
+            
+        </form>
+        <div class="mini-searchbox-closeButt" onclick="miniSearchBox(false)">✖</div>
+    </div>
     <div class="sidebar">
         <div class="sidebar-closeButt" onclick="sidebar(false)">✖</div>
         <div class="sidebar-items">
@@ -29,6 +36,7 @@
             <div class="search-box">
                 <form action="#" method="post" >
                     <input type="submit" value="🔍" class="icon" />
+                    <input type="button" value="🔍" class="mini-searchbox-icon" onclick="miniSearchBox(true)"/>
                     <input type="text" name="search-box" id="search-box" placeholder="Search" />
                     
                 </form>
